@@ -1,0 +1,7 @@
+This Python program, authored by Adil Sameer, is a comprehensive solution for automating daily login routines on AWS ETC to facilitate the collection of rewards. The open-source code can be accessed on GitHub at:
+https://github.com/adilsameer/
+
+It is imperative to understand that this program has been developed solely for educational purposes. The creator, Adil Sameer, explicitly disclaims any responsibility for the potential misuse of this tool. The program and its maker strongly discourage any unauthorized or inappropriate use and do not endorse or support such activities.
+
+Users are advised to utilize this tool responsibly and in accordance with all applicable laws and regulations. Any misuse or unauthorized use is the sole responsibility of the user, and the program and its maker shall not be held accountable for such actions.
+
