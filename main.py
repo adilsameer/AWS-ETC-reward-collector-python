@@ -33,14 +33,14 @@ def collect_reward():
         print("Reward already collected")
 
 
-currect_time = dt.now()
+current_time = dt.now()
 
 # While loop is used to run program always
 while True:
-    # if condition check for current time to be 24 hour (12 AM)
-    if currect_time.hour == 0:
-        # random minutes choose random minute between 1 minute to 60 minutes
-        random_minutes = random.randint(60, 3600)
+    # if condition check for current time is 1 in 24 hours (1 AM)
+    if current_time.hour == 1:
+        # random minutes choose random minute between 1 minute to 30 minutes
+        random_minutes = random.randint(60, 1800)
         # program stops for random minutes
         time.sleep(random_minutes)
         chrome_options = webdriver.ChromeOptions()
@@ -54,10 +54,10 @@ while True:
         collect_reward()
         # After collecting reward it close chrome
         driver.quit()
+        time_after_reward_collected = current_time.minute * 60
         # Program sleeps for again 24 hours and rerun after 24  hours
-        sleep_24_hours = 86400 - random_minutes - 10
+        sleep_24_hours = 86400 - time_after_reward_collected
         time.sleep(sleep_24_hours)
-
 
 
 
